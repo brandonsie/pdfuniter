@@ -5,6 +5,10 @@
 #' @param check Logical, whether or not to invoke Sys.which to check for existance of pdfunite command line utility.
 #' @param verbose Logical, whether or not to print command before running.
 #'
+#' @examples
+#' pdfunite(c("page1.pdf", "page2.pdf", "page3.pdf"), "full_document.pdf")
+#' pdfunite(c("a.pdf", "b.pdf"), "ab.pdf", check = FALSE, verbose = FALSE)
+#'
 #' @export
 
 pdfunite <- function(input, output, check = TRUE, verbose = TRUE){

@@ -18,3 +18,8 @@ pdfunite(input, output, check = TRUE, verbose = TRUE)
 \description{
 Interact with command line utility pdfunite to combine pdfs into a single file.
 }
+\examples{
+pdfunite(c("page1.pdf", "page2.pdf", "page3.pdf"), "full_document.pdf")
+pdfunite(c("a.pdf", "b.pdf"), "ab.pdf", check = FALSE, verbose = FALSE)
+
+}
