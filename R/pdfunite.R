@@ -6,8 +6,13 @@
 #' @param verbose Logical, whether or not to print command before running.
 #'
 #' @examples
-#' pdfunite(c("page1.pdf", "page2.pdf", "page3.pdf"), "full_document.pdf")
-#' pdfunite(c("a.pdf", "b.pdf"), "ab.pdf", check = FALSE, verbose = FALSE)
+#' pdf("page1.pdf")
+#' plot(x = c(1:10), y = rnorm(10))
+#' dev.off()
+#' pdf("page2.pdf")
+#' plot(x = c(1:10), y = c(1:10))
+#' dev.off()
+#' pdfunite(c("page1.pdf", "page2.pdf"), "full_document.pdf")
 #'
 #' @export
 
